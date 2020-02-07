@@ -2,12 +2,25 @@
   text-decoration: none;
   list-style-type: none; }
 
+.content-section {
+  padding: 100px 0; }
+
+.text-center {
+  text-align: center; }
+
 a {
-  color: #fff; }
+  color: #fff;
+  outline: none; }
 
 ul {
   padding: 0;
   margin: 0; }
+
+label {
+  position: absolute;
+  right: 0;
+  min-width: 100%;
+  height: 100%; }
 
 body {
   font-family: sans-serif;
@@ -45,7 +58,9 @@ header {
   right: 0;
   z-index: 2;
   height: 100%;
-  width: 250px; }
+  width: 250px;
+  transform: translateX(250px);
+  transition: all 0.5s; }
   #sideabar-wrapper li {
     margin: 20px 0;
     padding: 20px; }
@@ -55,6 +70,9 @@ header {
     background: rgba(52, 58, 64, 0.1);
     line-height: 40px;
     margin-top: 0; }
+
+#trigger:checked ~ #sideabar-wrapper {
+  transform: translateX(0); }
 
 .banner {
   text-align: center;
@@ -75,4 +93,35 @@ header {
   background-color: #1d809f;
   border-radius: 5px;
   font-size: 16px;
-  font-weight: 700; }
+  font-weight: 700;
+  outline: none;
+  transition: all 0.3s; }
+  .find-more:hover, .find-more:focus {
+    background-color: #155d74; }
+
+.unsplash {
+  line-height: 40px; }
+  .unsplash h2 {
+    font-size: 30px;
+    font-weight: 700; }
+  .unsplash p {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 30px; }
+    .unsplash p a {
+      color: #1d809f;
+      outline: none;
+      font-weight: 500; }
+      .unsplash p a:hover, .unsplash p a:focus {
+        text-decoration: underline; }
+  .unsplash .offer {
+    background-color: #343a40;
+    border-radius: 5px;
+    font-weight: 700;
+    padding: 22px 40px;
+    transition: all 0.3s; }
+    .unsplash .offer:hover {
+      background-color: #26292d; }
+    .unsplash .offer:focus {
+      border: 3px solid #5d656d;
+      transition: all 0.3s; }
