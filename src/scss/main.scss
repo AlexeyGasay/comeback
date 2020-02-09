@@ -66,6 +66,7 @@ header {
     background-color: #343a40;
   }
 
+
   i {
     display: inline-block;
   }
@@ -106,6 +107,14 @@ header {
   transform: translateX(0);
 }
 
+#trigger:checked ~ .menu-toggle > i.fa-bars {
+  display: none;
+}
+
+#trigger:checked ~ .menu-toggle > i.fa-times {
+  display: inline-block;
+}
+
 
 
 .banner {
@@ -144,6 +153,8 @@ header {
 }
 // end of header
 
+
+
 .unsplash {
   line-height: 40px;
 
@@ -154,7 +165,7 @@ header {
 
   p {
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 100;
     margin-bottom: 30px;
 
     a {
@@ -186,6 +197,49 @@ header {
     }
   }
 }
+
+
+
+
+
+//
+
+#services {
+  background-color: #1d809f;
+  color: #fff;
+
+  h2 {
+    font-size: 45px;
+    font-weight: 700;
+  }
+
+  h3 {
+    font-size: 18px;
+    color: #ecb807;
+    font-weight: 600;
+  }
+
+  span {
+    position: relative;
+  }
+
+  i {
+    color: #1d809f;
+    font-size: 25px;
+
+  }
+
+
+}
+
+.rounded-circle {
+  display: inline-block;
+  background-color: #fff;
+  padding: 40px 43px;
+  border-radius: 100px;
+}
+
+
 
 
 

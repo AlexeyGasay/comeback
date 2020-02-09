@@ -74,6 +74,12 @@ header {
 #trigger:checked ~ #sideabar-wrapper {
   transform: translateX(0); }
 
+#trigger:checked ~ .menu-toggle > i.fa-bars {
+  display: none; }
+
+#trigger:checked ~ .menu-toggle > i.fa-times {
+  display: inline-block; }
+
 .banner {
   text-align: center;
   padding-top: 300px;
@@ -106,7 +112,7 @@ header {
     font-weight: 700; }
   .unsplash p {
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 100;
     margin-bottom: 30px; }
     .unsplash p a {
       color: #1d809f;
@@ -125,3 +131,25 @@ header {
     .unsplash .offer:focus {
       border: 3px solid #5d656d;
       transition: all 0.3s; }
+
+#services {
+  background-color: #1d809f;
+  color: #fff; }
+  #services h2 {
+    font-size: 45px;
+    font-weight: 700; }
+  #services h3 {
+    font-size: 18px;
+    color: #ecb807;
+    font-weight: 600; }
+  #services span {
+    position: relative; }
+  #services i {
+    color: #1d809f;
+    font-size: 25px; }
+
+.rounded-circle {
+  display: inline-block;
+  background-color: #fff;
+  padding: 40px 43px;
+  border-radius: 100px; }
