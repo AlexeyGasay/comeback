@@ -1,6 +1,7 @@
 * {
   text-decoration: none;
   list-style-type: none;
+  scroll-behavior: smooth;
 }
 
 .content-section {
@@ -88,7 +89,6 @@ header {
 
   li {
     margin: 20px 0;
-    padding: 20px;
 
     &:hover {
       background-color: #73b0c3;
@@ -100,6 +100,11 @@ header {
     background: rgba(52,58,64,.1);
     line-height: 40px;
     margin-top: 0;
+  }
+
+  a {
+    display: block;
+    padding: 15px;
   }
 }
 
@@ -155,7 +160,7 @@ header {
 
 
 
-.unsplash {
+#about {
   line-height: 40px;
 
   h2 {
@@ -219,8 +224,8 @@ header {
     font-weight: 600;
   }
 
-  span {
-    position: relative;
+  p {
+    color: rgba(255,255,255,.7);
   }
 
   i {

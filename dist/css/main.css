@@ -1,6 +1,7 @@
 * {
   text-decoration: none;
-  list-style-type: none; }
+  list-style-type: none;
+  scroll-behavior: smooth; }
 
 .content-section {
   padding: 100px 0; }
@@ -62,14 +63,16 @@ header {
   transform: translateX(250px);
   transition: all 0.5s; }
   #sideabar-wrapper li {
-    margin: 20px 0;
-    padding: 20px; }
+    margin: 20px 0; }
     #sideabar-wrapper li:hover {
       background-color: #73b0c3; }
   #sideabar-wrapper li:first-child {
     background: rgba(52, 58, 64, 0.1);
     line-height: 40px;
     margin-top: 0; }
+  #sideabar-wrapper a {
+    display: block;
+    padding: 15px; }
 
 #trigger:checked ~ #sideabar-wrapper {
   transform: translateX(0); }
@@ -105,30 +108,30 @@ header {
   .find-more:hover, .find-more:focus {
     background-color: #155d74; }
 
-.unsplash {
+#about {
   line-height: 40px; }
-  .unsplash h2 {
+  #about h2 {
     font-size: 30px;
     font-weight: 700; }
-  .unsplash p {
+  #about p {
     font-size: 18px;
     font-weight: 100;
     margin-bottom: 30px; }
-    .unsplash p a {
+    #about p a {
       color: #1d809f;
       outline: none;
       font-weight: 500; }
-      .unsplash p a:hover, .unsplash p a:focus {
+      #about p a:hover, #about p a:focus {
         text-decoration: underline; }
-  .unsplash .offer {
+  #about .offer {
     background-color: #343a40;
     border-radius: 5px;
     font-weight: 700;
     padding: 22px 40px;
     transition: all 0.3s; }
-    .unsplash .offer:hover {
+    #about .offer:hover {
       background-color: #26292d; }
-    .unsplash .offer:focus {
+    #about .offer:focus {
       border: 3px solid #5d656d;
       transition: all 0.3s; }
 
@@ -142,8 +145,8 @@ header {
     font-size: 18px;
     color: #ecb807;
     font-weight: 600; }
-  #services span {
-    position: relative; }
+  #services p {
+    color: rgba(255, 255, 255, 0.7); }
   #services i {
     color: #1d809f;
     font-size: 25px; }
