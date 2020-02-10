@@ -12,6 +12,12 @@
   text-align: center;
 }
 
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+
+}
+
 a {
   color: #fff;
   outline: none;
@@ -244,12 +250,61 @@ header {
   border-radius: 100px;
 }
 
+//
 
 
 
 
+.portfolio-item {
+  display: block;
+  position: relative;
+  max-width: 530px;
+  overflow: hidden;
+  margin: auto auto 20px;
+  transition: all 0.3s;
+
+  .caption {
+    z-index: 1;
+  }
+
+  img {
+    -webkit-transition: -webkit-clip-path .25s ease-out;
+        -webkit-clip-path: inset(-1px);
+        clip-path: inset(-1px)
+  }
+
+  &:hover img {
+    -webkit-clip-path: inset(2rem);
+        clip-path: inset(2rem)
+  }
+
+  &:hover ~ .caption {
+    background-color: rgba(29,128,159,.9);
+        -webkit-clip-path: inset(2rem);
+        clip-path: inset(2rem)
+
+  }
+
+}
 
 
+.caption-content {
+  bottom: 20%;
+  padding: 0 15px 0 40px;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+
+  h2  {
+    font-weight: 700;
+    font-size: 14px;
+  }
+
+  p {
+    font-weight: 300;
+    font-size: 15px;
+  }
+}
 
 
 
